@@ -4,8 +4,11 @@
   "description": "Clean Code examples in native (vanilla) Javascript.",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Geert Guldentops",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.5.0"
+  }
 }
