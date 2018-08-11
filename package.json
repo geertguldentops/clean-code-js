@@ -2,7 +2,6 @@
   "name": "clean-code-js",
   "version": "1.0.0",
   "description": "Clean Code examples in native (vanilla) Javascript.",
-  "main": "main.js",
   "scripts": {
     "test": "jest"
   },
@@ -10,5 +9,8 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^23.5.0"
+  },
+  "dependencies": {
+    "moment": "^2.22.2"
   }
 }
