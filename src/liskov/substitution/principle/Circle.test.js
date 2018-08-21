@@ -8,8 +8,8 @@ describe('Given a Circle', () => {
         const circumference = circle.calculateCircumference();
 
         test('Then it return the r times 2 times PI', () => {
-            // expect(circumference).toBe(20.11); This won't work because of rounding error
-            expect(circumference).toBeCloseTo(20.11); // This works.
+            // expect(circumference).toBe(20.11); This might work, or it might not because of rounding errors!
+            expect(circumference).toBeCloseTo(20.11); // This always works!
         });
     });
 

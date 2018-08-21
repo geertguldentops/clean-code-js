@@ -8,8 +8,8 @@ describe('Given a Square', () => {
         const circumference = square.calculateCircumference();
 
         test('Then it return the side times 4', () => {
-            // expect(circumference).toBe(20.8); This won't work because of rounding error
-            expect(circumference).toBeCloseTo(20.8); // This works.
+            // expect(circumference).toBe(20.8); This might work, or it might not because of rounding errors!
+            expect(circumference).toBeCloseTo(20.8); // This always works!
         });
     });
 

@@ -8,8 +8,8 @@ describe('Given a Rectangle', () => {
         const circumference = rectangle.calculateCircumference();
 
         test('Then it return the sum of the width and the height times 2', () => {
-            // expect(circumference).toBe(30.4); This won't work because of rounding error
-            expect(circumference).toBeCloseTo(30.4); // This works.
+            // expect(circumference).toBe(30.4); This might work, or it might not because of rounding errors!
+            expect(circumference).toBeCloseTo(30.4); // This always works!
         });
     });
 

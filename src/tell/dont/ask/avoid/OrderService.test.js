@@ -15,8 +15,8 @@ describe('Given an OrderService', () => {
         const finalPrice = orderService.finaliseOrder(order, 0.1);
 
         test('Then it substracts the discount from the product with the lowest price', () => {
-            // expect(finalPrice).toBe(62.49); This won't work because of rounding error
-            expect(finalPrice).toBeCloseTo(62.49); // This works.
+            // expect(finalPrice).toBe(62.49); This might work, or it might not because of rounding errors!
+            expect(finalPrice).toBeCloseTo(62.49); // This always works!
         });
     });
 });

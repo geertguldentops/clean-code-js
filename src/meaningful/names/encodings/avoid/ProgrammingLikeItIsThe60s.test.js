@@ -1,5 +1,6 @@
 const ReportDefinitionModel = require('./ProgrammingLikeItIsThe60s');
 
+// Avoid this! Encodings make the code unnecessary difficult to read!
 describe('Given a ReportDefinitionModel', () => {
     const lcReportDefinitionModel = new ReportDefinitionModel();
 

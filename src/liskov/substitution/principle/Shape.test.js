@@ -25,8 +25,8 @@ describe('Given a bunch of shapes', () => {
             .reduce((a, b) => a + b, 0);
 
         test('Then it return the total circumference of all the shapes', () => {
-            // expect(circumference).toBe(89.26); This won't work because of rounding error
-            expect(totalCircumference).toBeCloseTo(89.26); // This works.
+            // expect(circumference).toBe(89.26); This might work, or it might not because of rounding errors!
+            expect(totalCircumference).toBeCloseTo(89.26); // This always works!
         });
     });
 
