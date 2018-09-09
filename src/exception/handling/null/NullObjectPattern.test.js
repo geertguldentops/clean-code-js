@@ -53,7 +53,7 @@ describe('All employees', () => {
                 .reduce((a, b) => a + b, 0);
 
             test('Then the total is a pretty big number!', () => {
-                expect(totalWager).toBe(4000);
+                expect(totalWager).toBe(3000);
             });
         });
     });

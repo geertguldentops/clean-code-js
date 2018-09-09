@@ -2,11 +2,12 @@ const moment = require('moment');
 
 let Employee = class Employee {
 
-    constructor(id, firstName, lastName, hiringDate) {
+    constructor(id, firstName, lastName, hiringDate, terminationDate) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.hiringDate = hiringDate;
+        this.terminationDate = terminationDate;
     }
 
     calculateWager() {
@@ -14,7 +15,7 @@ let Employee = class Employee {
     }
 
     calculateEmploymentDurationInYears() {
-        return moment().diff(this.hiringDate, 'years');
+        return this.terminationDate.diff(this.hiringDate, 'years');
     }
 
     isNull() {
@@ -31,6 +32,7 @@ let NullEmployee = class NullEmployee {
         this.lastName = "";
         this.function = "";
         this.hiringDate = moment();
+        this.terminationDate = moment();
     }
 
     calculateWager() {
@@ -47,7 +49,7 @@ module.exports.NullEmployee = NullEmployee;
 
 // Advantage of a dynamically typed language: heterogeneous arrays!
 module.exports.employees = [
-    new Employee(1, "Jane", "Doe", moment("2015-11-02")),
-    new Employee(2, "John", "Doe", moment("2016-03-19")),
+    new Employee(1, "Jane", "Doe", moment("2015-11-02"), moment("2017-12-31")),
+    new Employee(2, "John", "Doe", moment("2016-03-19"), moment("2017-12-31")),
     new NullEmployee()
 ];
