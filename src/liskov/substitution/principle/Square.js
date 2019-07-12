@@ -1,7 +1,7 @@
 const Rectangle = require('./Rectangle');
 
 /**
- * Square has an extra invariant compared to a Rectangle, weight and height must always be equal!
+ * Square has an extra invariant compared to a Rectangle, width and height must always be equal!
  */
 module.exports = class Square extends Rectangle {
 
