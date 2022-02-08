@@ -8,7 +8,7 @@
   "author": "Geert Guldentops",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^25.1.0",
+    "jest": "^27.5.0",
     "lodash": "^4.17.21"
   },
   "dependencies": {
